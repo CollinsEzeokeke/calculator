@@ -1,0 +1,32 @@
+Understanding the JavaScript Code
+The clearScreen(), display(), and calculate() functions add functionality to the Calculator.
+
+
+Clearing Values
+The clearScreen() function access the DOM using the id of the result and clear its value by assigning it an empty string. You can use DOM selectors to target various components of a page.
+
+function clearScreen() {
+    document.getElementById("result").value = "";
+}
+Displaying Values
+The display() function accesses the DOM using the id of the result and appends the value of the clicked button to the result.
+
+function display(value) {
+    document.getElementById("result").value += value;
+}
+Evaluating Expression
+The calculate() function accesses the DOM using the id of the result and evaluates the expression using the eval() function. The evaluated value of the expression is again assigned to the result.
+
+The JavaScript eval() function evaluates an expression that you pass to it. It returns the result of that expression.
+
+function calculate() {
+    var p = document.getElementById("result").value;
+    var q = eval(p);
+    document.getElementById("result").value = q;
+}
+Develop Cool Programming Projects
+You can improve your coding skills by developing projects, whether you're a beginner or you're getting back into coding after some time off. Creating fully-working apps, even simple ones, can boost your confidence.
+
+You can try out many simple projects from games (chess, tic-tac-toe, Rock Paper Scissors) to simple utilities (to-do list, weight conversion, countdown clock).
+
+Get your hands dirty with these projects and become a better developer.
